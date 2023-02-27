@@ -27,10 +27,11 @@ const person = {
 
 // adding something new to the code
 
-const func = async () => {
+const func = () => {
   // use fetch api here or axios
-  const response = await fetch(url);
-  const res = await (await response).json();
+  const response = fetch(url)
+    .then((response) => response.json())
+    .then((data) => console.log(data));
   // now data is stored in the res.
 };
 
