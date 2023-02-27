@@ -23,6 +23,17 @@ const person = {
   },
 };
 
+// Kabeer Joshi
+
+// adding something new to the code
+
+const func = async () => {
+  // use fetch api here or axios
+  const response = await fetch(url);
+  const res = await (await response).json();
+  // now data is stored in the res.
+};
+
 // Log the person object to the console
 console.log(person);
 
