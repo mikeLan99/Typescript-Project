@@ -1,47 +1,59 @@
-// Define a function that accepts two numbers and returns their sum
-function addNumbers(num1, num2) {
-  return num1 + num2;
+// Define a function that accepts two numbers and returns their difference
+function subtractNumbers(num1, num2) {
+  return num1 - num2;
 }
 
-// Call the addNumbers function and store the result in a variable
-const sum = addNumbers(4, 6);
+// Call the subtractNumbers function and store the result in a variable
+const difference = subtractNumbers(10, 3);
 
-// Log the sum to the console
-console.log(`The sum of 4 and 6 is ${sum}`);
+// Log the difference to the console
+console.log(`The difference between 10 and 3 is ${difference}`);
 
 // Define an object representing a person
 const person = {
-  firstName: "John",
+  firstName: "Jane",
   lastName: "Doe",
-  age: 30,
-  hobbies: ["reading", "running", "cooking"],
+  age: 25,
+  hobbies: ["traveling", "photography", "yoga"],
   address: {
-    street: "123 Main St",
-    city: "Anytown",
-    state: "CA",
-    zip: "12345",
+    street: "456 Elm St",
+    city: "Somewhere",
+    state: "NY",
+    zip: "67890",
   },
+};
+
+// Kabeer Joshi
+
+// adding something new to the code
+
+const func = () => {
+  // use fetch api here or axios
+  const response = fetch(url)
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+  // now data is stored in the res.
 };
 
 // Log the person object to the console
 console.log(person);
 
 // Define an array of numbers
-const numbers = [1, 2, 3, 4, 5];
+const numbers = [5, 10, 15, 20];
 
 // Use a loop to iterate over the numbers array and log each number to the console
 for (let i = 0; i < numbers.length; i++) {
-  console.log(numbers[i]);
+  console.log(`Number ${i + 1} in the array is ${numbers[i]}`);
 }
 
-// Define a function that accepts an array of numbers and returns their sum
-function sumNumbers(numbers) {
-  let sum = 0;
+// Define a function that accepts an array of numbers and returns their product
+function multiplyNumbers(numbers) {
+  let product = 1;
   for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
+    product *= numbers[i];
   }
-  return sum;
+  return product;
 }
 
-// Call the sumNumbers function and log the result to the console
-console.log(`The sum of [1, 2, 3, 4, 5] is ${sumNumbers(numbers)}`);
+// Call the multiplyNumbers function and log the result to the console
+console.log(`The product of [5, 10, 15, 20] is ${multiplyNumbers(numbers)}`);
